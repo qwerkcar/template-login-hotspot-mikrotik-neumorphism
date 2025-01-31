@@ -69,10 +69,10 @@
             <button class="btn-submit" type="submit">Login</button>
         </form>
 
-        $(if trial == 'yes')
-        <div class="link">Gratis <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">klik
-                di sini</a></div>
-        $(endif)
+        ${if trial == 'yes'}
+            <div class="link">Gratis<a href="${link-login-only}?dst=${link-orig-esc}&amp;username=T-${mac-esc}">klik di sini</a>
+            </div>
+        ${endif}
 
         $(if error)<div class="notice">$(error)</div>$(endif)
         <!-- <div class="link">
