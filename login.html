@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Hotspot Rumah</title>
+    <title id="title">rumah_net</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&dispplay=swap" /> -->
 </head>
@@ -69,10 +69,10 @@
             <button class="btn-submit" type="submit">Login</button>
         </form>
 
-        ${if trial == 'yes'}
-        <div class="link">Gratis<a href="${link-login-only}?dst=${link-orig-esc}&amp;username=T-${mac-esc}">klik 
+        $(if trial == 'yes')
+        <div class="link">Gratis <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">klik
                 di sini</a></div>
-        ${endif}
+        $(endif)
 
         $(if error)<div class="notice">$(error)</div>$(endif)
         <!-- <div class="link">
@@ -80,7 +80,7 @@
         </div> -->
 
         <div class="link">
-            <a href="#">Order : </a> +62 887 0566 9313
+            <a href="#">Telegram : </a> balinux
         </div>
 
         <!-- Scroll item -->
@@ -100,7 +100,7 @@
         <div class="menu-items">
 
             <div class="row-items">
-                <div class="title"> 1 Hari</div>
+                <div class="title"> 1 hari</div>
                 <div class="title"> Rp. 2000</div>
             </div>
             <div class="row-items">
@@ -112,7 +112,7 @@
 
         <!-- footer mohon jangan di hilangkan-->
         <div class="link">
-            <a href="http://yardansh.site">Made with</a> &#10084; <a href="yardansh.site">by yardansh</a>
+            <a href="http://yardansh.site">Made with</a> &#10084; <a href="http://yardansh.site">by yardansh</a>
         </div>
         <!-- footer -->
     </div>
